@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResellPro - Business Reselling</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+      background-color: #f5f6fa;
+      color: #232526;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #2a2a72 0%, #009ffd 100%);
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+    }
+    .nav-link.active, .nav-link:hover {
+      color: #f9d423 !important;
+    }
+    .hero {
+      background: linear-gradient(120deg, #009ffd 0%, #2a2a72 100%);
+      color: #fff;
+      padding: 80px 0 40px 0;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+    }
+    .highlight-box {
+      background: #fff;
+      color: #232526;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(44, 62, 80, 0.08);
+      padding: 2rem 1rem;
+      min-width: 220px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 1rem;
+      text-align: center;
+    }
+    .card-img-top {
+      height: 160px;
+      object-fit: cover;
+      border-radius: 14px 14px 0 0;
+    }
+    .footer {
+      background: #232526;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-top: 40px;
+      border-radius: 40px 40px 0 0;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .btn-cta {
+      background: #f9d423;
+      color: #232526;
+      font-weight: 600;
+      border-radius: 32px;
+      font-size: 1.15rem;
+      padding: 1rem 2.2rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 6px 22px rgba(44, 62, 80, 0.12);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-cta:hover {
+      background: #f83600;
+      color: #fff;
+    }
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow animate__animated animate__fadeInDown">
+    <div class="container">
+      <a class="navbar-brand" href="#">ResellPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">Welcome to ResellPro</h1>
+      <p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+        The best place to find high-quality products and professional services, all in one modern marketplace.<br>
+        Discover exclusive deals and elevate your business with our reselling opportunities.
+      </p>
+      <a href="#products" class="btn btn-cta animate__animated animate__pulse animate__infinite">Browse Products</a>
+      <div class="d-flex flex-wrap justify-content-center mt-5">
+        <div class="highlight-box animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <span style="font-size:2rem;">🏆</span><br>
+          Top Quality Products
+        </div>
+        <div class="highlight-box animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <span style="font-size:2rem;">🤝</span><br>
+          Professional Services
+        </div>
+        <div class="highlight-box animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+          <span style="font-size:2rem;">💡</span><br>
+          Trusted Support
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="container py-5" id="products">
+    <div class="section-title animate__animated animate__fadeInDown">Our Products</div>
+    <div class="row g-4">
+      <!-- Example Product Card 1 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp">
+        <div class="card shadow h-100">
+          <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Wireless Headphones">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Headphones</h5>
+            <p class="card-text text-secondary">Noise-cancelling, Bluetooth 5.2</p>
+            <p class="card-text">Experience superior audio quality and comfort. Perfect for music lovers and professionals.</p>
+            <span class="badge bg-primary"> $79.99 </span>
+          </div>
+        </div>
+      </div>
+      <!-- Example Product Card 2 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp" style="animation-delay:0.2s;">
+        <div class="card shadow h-100">
+          <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Smart Fitness Watch">
+          <div class="card-body">
+            <h5 class="card-title">Smart Fitness Watch</h5>
+            <p class="card-text text-secondary">Track steps, heart rate &amp; more</p>
+            <p class="card-text">Monitor your health, track workouts, and stay connected on the go.</p>
+            <span class="badge bg-primary"> $59.99 </span>
+          </div>
+        </div>
+      </div>
+      <!-- Example Product Card 3 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp" style="animation-delay:0.4s;">
+        <div class="card shadow h-100">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Portable Speaker">
+          <div class="card-body">
+            <h5 class="card-title">Portable Speaker</h5>
+            <p class="card-text text-secondary">Waterproof, 360° sound</p>
+            <p class="card-text">Bring your music anywhere with powerful sound and waterproof durability.</p>
+            <span class="badge bg-primary"> $39.99 </span>
+          </div>
+        </div>
+      </div>
+      <!-- Add more product cards here -->
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container py-5" id="services">
+    <div class="section-title animate__animated animate__fadeInDown">Our Services</div>
+    <div class="row g-4">
+      <!-- Example Service Card 1 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Website Design">
+          <div class="card-body">
+            <h5 class="card-title">Website Design</h5>
+            <p class="card-text text-secondary">Modern, responsive websites</p>
+            <p class="card-text">Get a professionally crafted site tailored to your business needs.</p>
+            <span class="badge bg-success">from $299</span>
+          </div>
+        </div>
+      </div>
+      <!-- Example Service Card 2 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp" style="animation-delay:0.2s;">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Social Media Marketing">
+          <div class="card-body">
+            <h5 class="card-title">Social Media Marketing</h5>
+            <p class="card-text text-secondary">Grow your brand online</p>
+            <p class="card-text">Boost your presence and engagement across social platforms.</p>
+            <span class="badge bg-success">from $199</span>
+          </div>
+        </div>
+      </div>
+      <!-- Example Service Card 3 -->
+      <div class="col-12 col-md-4 animate__animated animate__fadeInUp" style="animation-delay:0.4s;">
+        <div class="card h-100 shadow">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="IT Support">
+          <div class="card-body">
+            <h5 class="card-title">IT Support</h5>
+            <p class="card-text text-secondary">24/7 remote assistance</p>
+            <p class="card-text">Expert IT support services for smooth business operations.</p>
+            <span class="badge bg-success">from $99</span>
+          </div>
+        </div>
+      </div>
+      <!-- Add more service cards here -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container py-5" id="about">
+    <div class="section-title animate__animated animate__fadeInDown">About ResellPro</div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="p-4 bg-white rounded-4 shadow animate__animated animate__fadeInUp">
+          <p>
+            <b>ResellPro</b> is your gateway to reselling excellence. We connect you with top-quality products and professional services, empowering entrepreneurs and businesses to thrive.
+          </p>
+          <p>
+            Our platform blends advanced technology with a passion for service, providing a seamless experience from browsing to delivery.
+          </p>
+          <b>Our Values:</b>
+          <ul>
+            <li>Quality & Integrity</li>
+            <li>Customer Satisfaction</li>
+            <li>Innovation & Growth</li>
+            <li>Reliable Support</li>
+          </ul>
+          <p>
+            Join us and unlock new opportunities in the world of reselling!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container py-5" id="contact">
+    <div class="section-title animate__animated animate__fadeInDown">Contact Us</div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+        <form class="bg-white p-4 rounded-4 shadow animate__animated animate__fadeInUp" id="contactForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta w-100">Send Message</button>
+          <div id="formStatus" class="mt-3 text-success fw-bold" style="display:none;">Thank you! Your message has been sent.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer animate__animated animate__fadeInUp">
+    &copy; 2025 ResellPro. All rights reserved. Powered by Bootstrap.
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Contact form JS -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('formStatus').style.display = "block";
+      this.reset();
+    });
+    // Navbar active link
+    document.querySelectorAll('.nav-link').forEach(function(link){
+      link.addEventListener('click', function(){
+        document.querySelectorAll('.nav-link').forEach(function(l){ l.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
